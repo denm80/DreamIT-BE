@@ -5,7 +5,7 @@ public class MatchResultTest {
     Player player1 = new RandomPlayer();
     Player player2 = new RockPlayer();
 
-    private void testOfPlayerResult(PlayerResult playerResult, long wins, long defeats, long draws) {
+    public static void testOfPlayerResult(PlayerResult playerResult, long wins, long defeats, long draws) {
         Assert.assertEquals(wins, playerResult.getWins());
         Assert.assertEquals(defeats, playerResult.getDefeats());
         Assert.assertEquals(draws, playerResult.getDraws());

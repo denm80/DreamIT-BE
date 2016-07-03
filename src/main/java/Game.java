@@ -17,4 +17,12 @@ public class Game {
 
         return result > 0 ? player1 : player2;
     }
+
+    public MatchResult match(int rounds) {
+        Player[] winners = new Player[rounds];
+        for (int i = 0; i < rounds; i++) {
+            winners[i] = round();
+        }
+        return new MatchResult(winners);
+    }
 }
