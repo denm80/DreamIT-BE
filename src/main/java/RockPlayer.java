@@ -1,5 +1,5 @@
-public class RockPlayer implements IPlayer {
-    public GameElement play() {
+public class RockPlayer extends Player {
+    public GameElement next() {
         return GameElement.ROCK;
     }
 }

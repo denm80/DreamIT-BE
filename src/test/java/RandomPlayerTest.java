@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import java.util.*;
 
-public class RandomPlayerTest {
+public class RandomPlayerTest extends PlayerTest {
     private static final int COUNT_ITERATION = 100;
     private static final double[] X_CRITERIA_FOR_ALPHA_005 = { //ALPHA = 0.005
             7.87944,
@@ -40,7 +40,7 @@ public class RandomPlayerTest {
 
     @Test
     public void testOfUniformDistribution() {
-        IPlayer player = new RandomPlayer();
+        Player player = getPlayer();
 
         Map<GameElement, Integer> results = new HashMap<>();
         Arrays.stream(GameElement.values()).forEach(e -> results.put(e, 0));
@@ -54,5 +54,10 @@ public class RandomPlayerTest {
         double xObservable = results.values().stream().mapToDouble((i) -> Math.pow(i - m, 2) / m).sum();
 
         Assert.assertTrue(xObservable < X_CRITERIA_FOR_ALPHA_005[degreesFreedom - 1]);
+    }
+
+    @Override
+    Player getPlayer() {
+        return new RandomPlayer();
     }
 }
