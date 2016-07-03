@@ -1,5 +1,6 @@
-import java.util.List;
-
+/**
+ * Class contains result of match for player
+ */
 public class PlayerResult {
     private long wins;
     private long draws;

@@ -1,3 +1,7 @@
+/**
+ * Class provides possibility to have {@link #round() round} or {@link #match(int) match (set of rounds))
+ * between two {@Players} according {@link Referee passed rules)
+ */
 public class Game {
     private Player player1;
     private Player player2;
@@ -9,6 +13,10 @@ public class Game {
         this.player2 = player2;
     }
 
+    /**
+     * Makes a round.
+     * @return winner
+     */
     public Player round() {
         int result = referee.judje(player1.play(), player2.play());
         if (result == 0) {
@@ -18,6 +26,11 @@ public class Game {
         return result > 0 ? player1 : player2;
     }
 
+    /**
+     * Makes a match.
+     * @param  rounds - count of rounds in match
+     * @return result of match
+     */
     public MatchResult match(int rounds) {
         Player[] winners = new Player[rounds];
         for (int i = 0; i < rounds; i++) {
