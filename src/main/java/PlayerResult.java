@@ -22,4 +22,9 @@ public class PlayerResult {
     public long getDefeats() {
         return defeats;
     }
+
+    @Override
+    public String toString() {
+        return String.format("wins=%s\ndraws=%s\ndefeats=%s", wins, draws, defeats);
+    }
 }

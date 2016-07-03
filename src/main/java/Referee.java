@@ -3,7 +3,6 @@ import java.util.Map;
 
 public class Referee {
 
-    //immutable map
     private Map<GameElement, GameElement> rules =
             new HashMap<GameElement, GameElement>() {{
                 put(GameElement.ROCK, GameElement.SCISSORS);

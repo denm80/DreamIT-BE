@@ -11,4 +11,9 @@ public abstract class Player {
     }
 
     protected abstract GameElement next();
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }
