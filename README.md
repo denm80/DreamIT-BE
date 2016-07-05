@@ -1,3 +1,4 @@
+## Description
 Write a program that plays 100 iterations of Rock, Paper, Scissors (https://en.wikipedia.org/wiki/Rock-paper-scissors).
 One player should always play randomly, the other should always choose rock. It should show at the end how many games each player has one and how many were a draw.
 
@@ -8,3 +9,11 @@ Technical requirements
 Language: Java, tests in a JVM language of your choice
 Approach: ideally "test-driven"
 Please use local git (initially a “git init” in the project directory), so that we see a little of your working methods.
+
+## System Requirements
+* JDK 1.8+
+* Maven 3.3+
+
+## start
+* mvn install
+* java -jar target\DreamIT-BE-1.0-SNAPSHOT.jar
