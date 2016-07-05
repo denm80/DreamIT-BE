@@ -15,5 +15,7 @@ Please use local git (initially a “git init” in the project directory), so t
 * Maven 3.3+
 
 ## start
-* mvn install
-* java -jar target\DreamIT-BE-1.0-SNAPSHOT.jar
+```
+mvn install
+java -jar target\DreamIT-BE-1.0-SNAPSHOT.jar
+```
