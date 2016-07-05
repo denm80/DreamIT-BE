@@ -10,11 +10,11 @@ Language: Java, tests in a JVM language of your choice
 Approach: ideally "test-driven"
 Please use local git (initially a “git init” in the project directory), so that we see a little of your working methods.
 
-## System Requirements
+## Requirements
 * JDK 1.8+
 * Maven 3.3+
 
-## start
+## Start
 ```
 mvn install
 java -jar target\DreamIT-BE-1.0-SNAPSHOT.jar
